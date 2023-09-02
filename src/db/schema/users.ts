@@ -8,4 +8,4 @@ export const users = pgTable('online-users', {
 });
  
 export type User = typeof users.$inferSelect; // return type when queried
-export type NewUser = typeof users.$inferInsert; // insert type
+export type NewUser = typeof users.$inferInsert; // insert type 
