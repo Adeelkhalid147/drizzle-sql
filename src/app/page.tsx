@@ -12,14 +12,16 @@ export default async function Home(): Promise<JSX.Element> {
 
   return (
     <div>
+      <div className="text-4xl text-slate-500 py-8 flex items-center justify-center">
       database Data (sql)
+      </div>
       {rows.map((data,index) => (
-        <div className="font-bold" key={index}>
+        <div className="font-bold border-b-8" key={index}>
          <div> Product id :{data.product_id}</div> 
          <div> Quantity :{data.quantity} </div>
          <div> User_id :{data.user_id}</div>
          <div> Price :{data.price}</div>
-         <br/> <hr/>
+         <div></div>
         </div>
       ))}
     </div>
